@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "TI Phish-Defender",
+  "description": "Extension to predict whether URLs are likely to be Phishing or Not",
+  "version": "1.0",
+  "icons": {
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "http://127.0.0.1:5000/"
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}
